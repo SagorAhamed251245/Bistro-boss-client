@@ -1,14 +1,12 @@
-
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import MenuItem from "../../Shared/MenuItem/MenuItem";
-import useMenu from "../../../hookes/useMenu";
+import useMenu from "../../../hooks/useMenu";
 
 
 const PopularMenu = () => {
-
-    const [menu] = useMenu()
-    const popular = menu.filter(item => item.category === 'popular')
-  
+    const [menu] = useMenu();
+    const popular = menu.filter(item => item.category === 'popular');
+    
     return (
         <section className="mb-12">
             <SectionTitle
